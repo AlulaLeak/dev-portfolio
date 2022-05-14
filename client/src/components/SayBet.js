@@ -12,10 +12,10 @@ export default function SayBet() {
 
   const { showTitle, hideTitle } = animations();
   const [ref1, inView1] = useInView({
-    threshold: window.innerWidth < 500 ? 0.5 : 0.6,
+    threshold: window.innerWidth < 500 ? 0.4 : 0.6,
   });
   const [ref2, inView2] = useInView({
-    threshold: window.innerWidth < 500 ? 0.5 : 0.6,
+    threshold: window.innerWidth < 500 ? 0.4 : 0.6,
   });
 
   const secondProps = useSpring(inView1 ? showTitle : hideTitle);
