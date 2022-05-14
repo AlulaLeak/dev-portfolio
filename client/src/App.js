@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div>
       <StarrySky />
       <div className="parent">
         <Nav />
@@ -23,7 +23,7 @@ function App() {
           <SayBet />
         </section>
       </div>
-    </>
+    </div>
   );
 }
 
