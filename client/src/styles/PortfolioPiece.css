@@ -1,0 +1,126 @@
+@media (min-width: 500px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 7vh;
+  }
+  .say-bet-pic {
+    border: 4px solid rgb(177, 218, 255);
+    height: 85vh;
+  }
+  .test {
+    color: rgb(177, 218, 255);
+  }
+  .summary-wrapper {
+    border: 2px solid rgb(177, 218, 255);
+    height: 70vh;
+    width: 45vw;
+    background-color: rgba(0, 0, 0, 0.56);
+    margin-left: 12vw;
+  }
+  .summary-wrapper > p {
+    margin-top: 0.7em;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: aliceblue;
+    font-family: "segoe ui";
+    text-align: justify;
+    font-size: 1.3vw;
+  }
+  .summary-wrapper > div > p {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: aliceblue;
+    font-family: "segoe ui";
+    text-align: justify;
+    font-size: 1.3vw;
+  }
+
+  .summary-wrapper > h4 {
+    margin-top: 1em;
+    margin-left: 2vh;
+    color: aliceblue;
+    font-size: 1.6vw;
+  }
+  .summary-wrapper > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 2vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .summary-wrapper {
+    border: 2px solid rgb(177, 218, 255);
+    background-color: rgba(0, 0, 0, 0.895);
+    margin: 4px;
+    width: 90vw;
+    height: 64vh;
+    min-height: 60vh;
+  }
+  .summary-wrapper > h4 {
+    margin-top: 1em;
+    margin-left: 2vh;
+    color: aliceblue;
+  }
+  .summary-wrapper > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 7vw;
+  }
+  .summary-wrapper > div > button {
+    color: aliceblue;
+    border: 2px solid rgb(177, 218, 255);
+    box-sizing: border-box;
+    font-family: "segoe ui";
+    color: black;
+    font-weight: bold;
+  }
+  .summary-wrapper > p {
+    margin-top: 0.7em;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: aliceblue;
+    font-family: "segoe ui";
+    text-align: justify;
+    font-size: 4vw;
+  }
+  .button-br {
+    color: aliceblue;
+  }
+  h1 {
+    color: rgb(177, 218, 255);
+  }
+  .title {
+    margin-top: -0.5em;
+  }
+  .title > h4 {
+    color: rgba(177, 219, 255, 0.728);
+    margin-top: -1vh;
+  }
+  p.toggle {
+    color: rgb(188, 224, 255);
+    margin-top: 2.25vh;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15.5vh;
+  }
+  .say-bet-pic {
+    border: 2px solid rgb(177, 218, 255);
+    margin-top: 0.5vh;
+    height: 65vh;
+    width: 60vw;
+  }
+}

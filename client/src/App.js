@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./components/Nav";
+import StarrySky from "./components/StaryNight";
+import SayBet from "./components/SayBet";
+import AboveFold from "./components/AboveFold";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <StarrySky />
+      <div className="parent">
+        <Nav />
+        <section className="one">
+          <AboveFold />
+        </section>
+        <section className="two">
+          <SayBet />
+        </section>
+        <section className="three">
+          <SayBet />
+        </section>
+        <section className="four">
+          <SayBet />
+        </section>
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  top: 0%;
+  padding-top: 25px;
+  z-index: 1100;
+  background-color: black;
+  overflow: hidden;
+}
+.font-fam {
+  font-family: "segoe ui";
+  color: rgb(177, 218, 255);
+}
+.links {
+  margin: 18px;
+}
+div.font-fam {
+  font-size: xx-large;
+}
+a.font-fam {
+  margin: 5px;
+}
+.container {
+  max-width: 95%;
+  position: fixed;
+  background-color: black;
+}
+@media (max-width: 576px) {
+  .navbar {
+    padding-top: 35px;
+  }
+  .links {
+    margin-top: 15px;
+    margin-right: -10px;
+  }
+  div.font-fam {
+    margin-top: 2px;
+  }
+}
