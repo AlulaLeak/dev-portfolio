@@ -74,7 +74,7 @@ export default function SayBet() {
             </div>
           </div>
         )}
-        <Fade delay={1750} duration={3500} top forever>
+        <Fade delay={1000} duration={3500} top forever>
           <p className="toggle" onClick={() => toggle(!imgAndSummary)}>
             - click on anything to toggle -
           </p>

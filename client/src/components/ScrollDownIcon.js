@@ -8,7 +8,7 @@ export default function ScrollDownIcon() {
       <div id="wrapper">
         <div id="wrapper-inner">
           <div id="scroll-down">
-            <Fade delay={1750} duration={4000} top forever>
+            <Fade delay={1000} duration={4000} top forever>
               <span id="scroll-title">Scroll Down</span>
               <br />
               <span className="arrow-down"></span>
