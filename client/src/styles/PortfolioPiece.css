@@ -1,31 +1,57 @@
 @media (min-width: 500px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+  .flex-column {
+    display: flex;
+    margin-left: 10vw;
+    flex-direction: column;
+  }
+  .wrapper > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .make-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12vw;
+    align-items: center;
+  }
   .wrapper {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 7vh;
+    height: 80vh;
   }
   .say-bet-pic {
-    border: 4px solid rgb(177, 218, 255);
+    border: 2px solid;
     height: 85vh;
+    margin-top: 24vh;
   }
   .test {
     color: rgb(177, 218, 255);
   }
   .summary-wrapper {
-    border: 2px solid rgb(177, 218, 255);
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
     width: 45vw;
     background-color: rgba(0, 0, 0, 0.56);
-    margin-left: 12vw;
+  }
+  .full {
+    border-image: linear-gradient(45deg, turquoise, rgb(0, 0, 0)) 1;
   }
   .summary-wrapper > p {
-    margin-top: 0.7em;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
     color: aliceblue;
     font-family: "segoe ui";
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 2.3vh;
   }
   .summary-wrapper > div > p {
     margin-top: 0.7em;
@@ -35,20 +61,22 @@
     color: aliceblue;
     font-family: "segoe ui";
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 2.3vh;
   }
 
   .summary-wrapper > h4 {
     margin-top: 1em;
     margin-left: 2vh;
     color: aliceblue;
-    font-size: 1.6vw;
+    font-size: 2.8vh;
   }
   .summary-wrapper > div {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 2vw;
+  }
+  button {
+    margin-bottom: 2vh;
   }
 }
 
