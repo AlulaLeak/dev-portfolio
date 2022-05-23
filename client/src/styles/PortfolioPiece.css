@@ -43,7 +43,15 @@
     background-color: rgba(0, 0, 0, 0.56);
   }
   .full {
-    border-image: linear-gradient(45deg, turquoise, rgb(0, 0, 0)) 1;
+    border-image: linear-gradient(
+        45deg,
+        rgb(64, 205, 224),
+        rgb(0, 0, 0)
+      )
+      1;
+  }
+  .full-img {
+    border: 2.5px solid rgb(64, 205, 224);
   }
   .summary-wrapper > p {
     margin-left: 2.5vh;
@@ -81,6 +89,18 @@
 }
 
 @media (max-width: 500px) {
+  .row-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.7em;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: aliceblue;
+    font-family: "segoe ui";
+    /* text-align: justify; */
+    font-size: 4vw;
+  }
   .summary-wrapper {
     border: 2px solid rgb(177, 218, 255);
     background-color: rgba(0, 0, 0, 0.895);
@@ -94,7 +114,7 @@
     margin-left: 2vh;
     color: aliceblue;
   }
-  .summary-wrapper > div {
+  .github-link {
     display: flex;
     justify-content: center;
     position: relative;

@@ -6,10 +6,10 @@ export default function Title() {
     <>
       <div className="floating">
         <div className="title-pos">
-          <span className="name-first">Alula</span>
-          <br />
-          <span className="name-last">Leakemariam</span>
-          <br />
+          <div className="name-wrapper">
+            <span className="name-first">Alula</span>
+            <span className="name-last">Leakemariam</span>
+          </div>
           <span className="job-desc">Software Developer</span>
         </div>
         <div className="job-desc-mover"></div>

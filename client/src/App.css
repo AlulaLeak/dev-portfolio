@@ -1,5 +1,17 @@
+#container {
+  overscroll-behavior: none;
+}
+@media (max-width: 500px) {
+  .parent {
+    scroll-snap-type: y mandatory;
+  }
+}
+@media (min-width: 500px) {
+  .parent {
+    scroll-snap-type: y proximity;
+  }
+}
 .parent {
-  scroll-snap-type: y mandatory;
   height: 100vh;
   overflow: scroll;
   z-index: 1000;
@@ -20,4 +32,8 @@ h1 {
   align-items: center;
   color: aliceblue;
   margin-top: 25vh;
+}
+.test {
+  height: 100vh;
+  text-align: center;
 }
