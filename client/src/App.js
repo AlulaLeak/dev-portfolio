@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import StarrySky from "./components/StaryNight";
-import SayBet from "./components/SayBet";
+import SayBet from "./components/projects/SayBet";
+import Minesweeper from "./components/projects/Minesweeper";
 import AboveFold from "./components/AboveFold";
 import Droid from "./components/Droid";
 import "./App.css";
@@ -15,12 +16,27 @@ function App() {
           <AboveFold />
           <Droid />
         </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <section className="two">
           <SayBet />
         </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <section className="three">
-          <SayBet />
+          <Minesweeper />
         </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <section className="four">
           <SayBet />
         </section>

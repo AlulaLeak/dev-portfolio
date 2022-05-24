@@ -126,6 +126,7 @@
     box-sizing: border-box;
     font-family: "segoe ui";
     color: black;
+    background-color: aliceblue;
     font-weight: bold;
   }
   .summary-wrapper > p {
@@ -148,7 +149,8 @@
   }
   .title > h4 {
     color: rgba(177, 219, 255, 0.728);
-    margin-top: -1vh;
+    font-size: 3vw;
+    padding-bottom: 1vh;
   }
   p.toggle {
     color: rgb(188, 224, 255);
@@ -170,5 +172,11 @@
     margin-top: 0.5vh;
     height: 65vh;
     width: 60vw;
+  }
+  .mine-pic {
+    border: 2px solid rgb(177, 218, 255);
+    margin-top: 0.5vh;
+    height: 65vh;
+    width: 70vw;
   }
 }

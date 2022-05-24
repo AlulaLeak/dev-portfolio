@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
 #container {
   overscroll-behavior: none;
 }
@@ -8,13 +9,26 @@
 }
 @media (min-width: 500px) {
   .parent {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
+  }
+}
+/* Chrome 29+ */
+@media (min-width: 500px) and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .parent {
+    scroll-snap-type: x proximity;
+  }
+}
+
+/* Chrome 22-28 */
+@media (min-width: 500px) and(-webkit-min-device-pixel-ratio:0) {
+  .selector {
+    -chrome-: only(.parent {scroll-snap-type: x proximity;});
   }
 }
 .parent {
   height: 100vh;
   overflow: scroll;
-  z-index: 1000;
+  z-index: 100;
   background-color: transparent;
   scroll-behavior: smooth;
 }
@@ -32,8 +46,25 @@ h1 {
   align-items: center;
   color: aliceblue;
   margin-top: 25vh;
+  font-family: "Bungee";
+  font-size: calc(15px + 3vw);
+  margin-bottom: 1vw;
+}
+@media (max-width: 500px) {
+  h1 {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 25vh;
+    font-family: "Bungee";
+    font-size: calc(15px + 4vw);
+    margin-bottom: 3vw;
+  }
 }
 .test {
   height: 100vh;
   text-align: center;
+}
+.sky-wrapper {
+  z-index: -1000;
 }

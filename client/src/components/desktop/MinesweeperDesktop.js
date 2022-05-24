@@ -8,7 +8,7 @@ import Pulse from "react-reveal/Pulse";
 import LightSpeed from "react-reveal/LightSpeed";
 import "../../styles/PortfolioPiece.css";
 
-export default function SayBetDesktop() {
+export default function MinesweeperDesktop() {
   const [imgAndSummary, toggle] = useState(true);
   const [mouseHoverPic, setMouseHoverPic] = useState(false);
   const [mouseHoverSummary, setMouseHoverSummary] =
@@ -33,8 +33,8 @@ export default function SayBetDesktop() {
               <img
                 ref={ref1}
                 className="full-img say-bet-pic"
-                alt="saybet-sports-betting-app"
-                src="/saybet-live-games-page.png"
+                alt="Minesweeper-game-app"
+                src="/minesweeper.jpg"
               />
             </div>
           </Pulse>
@@ -51,7 +51,7 @@ export default function SayBetDesktop() {
             >
               <Pulse when={mouseHoverTitle}>
                 <h1 onClick={() => toggle(!imgAndSummary)}>
-                  SayBet
+                  Minesweeper
                 </h1>
               </Pulse>
               <Pulse when={mouseHoverTitle}>
