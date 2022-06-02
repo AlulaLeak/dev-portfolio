@@ -8,7 +8,7 @@ import Pulse from "react-reveal/Pulse";
 import LightSpeed from "react-reveal/LightSpeed";
 import "../../styles/PortfolioPiece.scss";
 
-export default function MinesweeperDesktop() {
+export default function InterviewSchedulerDesktop() {
   const [imgAndSummary, toggle] = useState(true);
   const [mouseHoverPic, setMouseHoverPic] = useState(false);
   const [mouseHoverSummary, setMouseHoverSummary] =
@@ -33,8 +33,8 @@ export default function MinesweeperDesktop() {
               <img
                 ref={ref1}
                 className="full-img say-bet-pic"
-                alt="Minesweeper-game-app"
-                src="/minesweeper.jpg"
+                alt="Interview-scheduler-app"
+                src="/interview-scheduler.jpg"
               />
             </div>
           </Pulse>
@@ -50,13 +50,16 @@ export default function MinesweeperDesktop() {
               ref={ref1}
             >
               <Pulse when={mouseHoverTitle}>
-                <h1 onClick={() => toggle(!imgAndSummary)}>
-                  Minesweeper
+                <h1
+                  style={{ marginTop: "22vh" }}
+                  onClick={() => toggle(!imgAndSummary)}
+                >
+                  Interview <br /> Scheduler
                 </h1>
               </Pulse>
               <Pulse when={mouseHoverTitle}>
                 <h4 onClick={() => toggle(!imgAndSummary)}>
-                  (Sports-Betting App)
+                  (Scheduling App)
                 </h4>
               </Pulse>
             </div>
@@ -152,15 +155,24 @@ export default function MinesweeperDesktop() {
                   quas vel sint commodi repudiandae!
                 </p>
               </LightSpeed>
-              <div>
+              <div id="button-wrapper">
                 <button
                   onClick={() =>
                     window.open(
-                      "https://boisterous-choux-7357e1.netlify.app"
+                      "https://bespoke-mermaid-ffb3a9.netlify.app"
                     )
                   }
                 >
                   Project Link
+                </button>
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/AlulaLeak/scheduler-assignment"
+                    )
+                  }
+                >
+                  GitHub Link
                 </button>
               </div>
             </div>

@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
-import "../../styles/PortfolioPiece.css";
+import "../../styles/PortfolioPiece.scss";
 
 export default function MinesweeperMobile() {
   const [imgAndSummary, toggle] = useState(true);
@@ -99,10 +99,12 @@ export default function MinesweeperMobile() {
             <div className="github-link">
               <button
                 onClick={() =>
-                  window.open("https://www.google.com")
+                  window.open(
+                    "https://boisterous-choux-7357e1.netlify.app"
+                  )
                 }
               >
-                GitHub Link
+                Project Link
               </button>
             </div>
           </div>

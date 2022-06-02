@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
 import "../../styles/PortfolioPiece.scss";
 
-export default function SayBetMobile() {
+export default function TodoMobile() {
   const [imgAndSummary, toggle] = useState(true);
   const { showTitle, hideTitle } = animations();
   const [ref1, inView1] = useInView({
@@ -23,9 +23,9 @@ export default function SayBetMobile() {
     <div className="wrapper">
       <a.div style={{ ...secondProps }}>
         <div className="title" ref={ref1}>
-          <h1 onClick={() => toggle(!imgAndSummary)}>SayBet</h1>
+          <h1 onClick={() => toggle(!imgAndSummary)}>Todai</h1>
           <h4 onClick={() => toggle(!imgAndSummary)}>
-            (Sports-Betting App)
+            (Todo/Reminder App)
           </h4>
         </div>
       </a.div>
@@ -34,9 +34,9 @@ export default function SayBetMobile() {
           <img
             ref={ref2}
             onClick={() => toggle(!imgAndSummary)}
-            className="say-bet-pic"
-            alt="saybet-sports-betting-app"
-            src="/saybet-live-games-page.png"
+            className="todo-pic"
+            alt="todo-app"
+            src="/todo.jpg"
           />
         ) : (
           <div className="summary-wrapper">
@@ -47,11 +47,12 @@ export default function SayBetMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                A sports betting app where users can bet on their
-                favorite sports games. Leagues include the NBA,
-                NHL, NFL and MLB. Types of bets that are
-                available to be made are moneylines (head to
-                head), spreads, and totals.
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Maxime mollitia, molestiae quas
+                vel sint commodi repudiandae consequuntur
+                voluptatum laborum numquam blanditiis harum
+                quisquam eius sed odit fugiat iusto fuga
+                praesentium optio, eaque rerum!
               </p>
             </LightSpeed>
             <LightSpeed left delay={1400} duration={1000}>
@@ -62,22 +63,22 @@ export default function SayBetMobile() {
             <div className="row-wrapper">
               <LightSpeed right delay={1500} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  PostgreSQL
+                  - Lorem
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1600} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  Express
+                  - Lorem
                 </p>
               </LightSpeed>
               <LightSpeed right delay={1700} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  React.js
+                  - Lorem
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1800} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  Node.js
+                  - Lorem
                 </p>
               </LightSpeed>
             </div>
@@ -93,24 +94,15 @@ export default function SayBetMobile() {
                 vel sint commodi repudiandae!
               </p>
             </LightSpeed>
-            <div id="button-wrapper" className="github-link">
+            <div className="github-link">
               <button
                 onClick={() =>
                   window.open(
-                    "https://share.vidyard.com/watch/vbHZBNsPzgnBwnEg9Gu4UV?"
+                    "https://todo-nextjs-redis.vercel.app"
                   )
                 }
               >
-                Video Demo
-              </button>
-              <button
-                onClick={() =>
-                  window.open(
-                    "https://github.com/AlulaLeak/sports-betting-app"
-                  )
-                }
-              >
-                GitHub Link
+                Project Link
               </button>
             </div>
           </div>

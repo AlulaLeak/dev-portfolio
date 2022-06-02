@@ -6,7 +6,7 @@ import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 import Pulse from "react-reveal/Pulse";
 import LightSpeed from "react-reveal/LightSpeed";
-import "../../styles/PortfolioPiece.css";
+import "../../styles/PortfolioPiece.scss";
 
 export default function SayBetDesktop() {
   const [imgAndSummary, toggle] = useState(true);
@@ -82,12 +82,11 @@ export default function SayBetDesktop() {
                 duration={1500}
               >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Maxime mollitia, molestiae
-                  quas vel sint commodi repudiandae consequuntur
-                  voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga
-                  praesentium optio, eaque rerum!
+                  A sports betting app where users can bet on
+                  their favorite sports games. Leagues include
+                  the NBA, NHL, NFL and MLB. Types of bets that
+                  are available to be made are moneylines (head
+                  to head), spreads, and totals.
                 </p>
               </LightSpeed>
               <LightSpeed
@@ -105,7 +104,7 @@ export default function SayBetDesktop() {
                   when={inView1}
                   duration={750}
                 >
-                  <p>- Lorem</p>
+                  <p>PostgreSQL</p>
                 </LightSpeed>
                 <LightSpeed
                   left
@@ -113,7 +112,7 @@ export default function SayBetDesktop() {
                   duration={1000}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>Express</p>
                 </LightSpeed>
                 <LightSpeed
                   right
@@ -121,7 +120,7 @@ export default function SayBetDesktop() {
                   duration={750}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>React.js</p>
                 </LightSpeed>
                 <LightSpeed
                   left
@@ -129,7 +128,7 @@ export default function SayBetDesktop() {
                   duration={1000}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>Node.js</p>
                 </LightSpeed>
               </div>
               <LightSpeed
@@ -152,10 +151,21 @@ export default function SayBetDesktop() {
                   quas vel sint commodi repudiandae!
                 </p>
               </LightSpeed>
-              <div>
+              <div id="button-wrapper">
                 <button
                   onClick={() =>
-                    window.open("https://www.google.com")
+                    window.open(
+                      "https://share.vidyard.com/watch/vbHZBNsPzgnBwnEg9Gu4UV?"
+                    )
+                  }
+                >
+                  Video Demo
+                </button>
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/AlulaLeak/sports-betting-app"
+                    )
                   }
                 >
                   GitHub Link

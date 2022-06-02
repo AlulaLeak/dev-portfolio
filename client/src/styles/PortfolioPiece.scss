@@ -40,6 +40,7 @@
     flex-direction: column;
     border: 2px solid;
     width: 45vw;
+    min-height: 70vh;
     background-color: rgba(0, 0, 0, 0.56);
   }
   .full {
@@ -76,15 +77,35 @@
     margin-top: 1em;
     margin-left: 2vh;
     color: aliceblue;
-    font-size: 2.8vh;
+    font-size: 4.8vh;
+  }
+  .title > h4 {
+    margin-top: -2vh;
+    margin-left: 2vh;
+    color: rgb(202, 230, 255);
+    font-size: 3vh;
   }
   .summary-wrapper > div {
     display: flex;
     justify-content: center;
-    position: relative;
   }
-  button {
-    margin-bottom: 2vh;
+
+  .summary-wrapper > div > button {
+    margin-top: 2vw;
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    border: 2px solid rgb(177, 218, 255);
+    box-sizing: border-box;
+    font-family: "segoe ui";
+    color: black;
+    background-color: aliceblue;
+    font-weight: bold;
+    &:hover {
+      background-color: rgb(99, 229, 186);
+      transform: scale(1.2);
+      transition-duration: 0.5s;
+    }
   }
 }
 
@@ -107,13 +128,15 @@
     margin: 4px;
     width: 90vw;
     height: 64vh;
-    min-height: 60vh;
+    min-height: auto;
   }
   .summary-wrapper > h4 {
     margin-top: 1em;
     margin-left: 2vh;
     color: aliceblue;
+    font-size: 3vh;
   }
+
   .github-link {
     display: flex;
     justify-content: center;
@@ -121,6 +144,7 @@
     margin-top: 7vw;
   }
   .summary-wrapper > div > button {
+    padding: 5px;
     color: aliceblue;
     border: 2px solid rgb(177, 218, 255);
     box-sizing: border-box;
@@ -149,7 +173,7 @@
   }
   .title > h4 {
     color: rgba(177, 219, 255, 0.728);
-    font-size: 3vw;
+    font-size: 4vw;
     padding-bottom: 1vh;
   }
   p.toggle {
@@ -179,4 +203,17 @@
     height: 65vh;
     width: 70vw;
   }
+  .todo-pic {
+    border: 2px solid rgb(177, 218, 255);
+    margin-top: 0.5vh;
+    height: 65vh;
+    width: 70vw;
+  }
+}
+#button-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  justify-content: space-around;
 }

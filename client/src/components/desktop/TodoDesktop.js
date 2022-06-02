@@ -8,7 +8,7 @@ import Pulse from "react-reveal/Pulse";
 import LightSpeed from "react-reveal/LightSpeed";
 import "../../styles/PortfolioPiece.scss";
 
-export default function MinesweeperDesktop() {
+export default function TodoDesktop() {
   const [imgAndSummary, toggle] = useState(true);
   const [mouseHoverPic, setMouseHoverPic] = useState(false);
   const [mouseHoverSummary, setMouseHoverSummary] =
@@ -33,8 +33,8 @@ export default function MinesweeperDesktop() {
               <img
                 ref={ref1}
                 className="full-img say-bet-pic"
-                alt="Minesweeper-game-app"
-                src="/minesweeper.jpg"
+                alt="todo-app"
+                src="/todo.jpg"
               />
             </div>
           </Pulse>
@@ -51,12 +51,12 @@ export default function MinesweeperDesktop() {
             >
               <Pulse when={mouseHoverTitle}>
                 <h1 onClick={() => toggle(!imgAndSummary)}>
-                  Minesweeper
+                  Todai
                 </h1>
               </Pulse>
               <Pulse when={mouseHoverTitle}>
                 <h4 onClick={() => toggle(!imgAndSummary)}>
-                  (Sports-Betting App)
+                  (Todo/Reminder App)
                 </h4>
               </Pulse>
             </div>
@@ -156,7 +156,7 @@ export default function MinesweeperDesktop() {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://boisterous-choux-7357e1.netlify.app"
+                      "https://todo-nextjs-redis.vercel.app/"
                     )
                   }
                 >

@@ -2,11 +2,20 @@ import Nav from "./components/Nav";
 import StarrySky from "./components/StaryNight";
 import SayBet from "./components/projects/SayBet";
 import Minesweeper from "./components/projects/Minesweeper";
+import InterviewScheduler from "./components/projects/InterviewScheduler";
 import AboveFold from "./components/AboveFold";
 import Droid from "./components/Droid";
+import Todo from "./components/projects/Todo";
 import "./App.css";
+const { detect } = require("detect-browser");
+const browser = detect();
 
 function App() {
+  function isSafari() {
+    if (navigator.vendor.match(/[Aa]+pple/g).length > 0)
+      return true;
+    return false;
+  }
   return (
     <div id="container">
       <StarrySky />
@@ -14,7 +23,9 @@ function App() {
         <Nav />
         <section className="one">
           <AboveFold />
-          <Droid />
+          {(browser.name !== "safari" || !isSafari()) &&
+            window.innerWidth > 500 && <Droid />}
+          {window.innerWidth < 500 && <Droid />}
         </section>
         <br />
         <br />
@@ -38,7 +49,15 @@ function App() {
         <br />
         <br />
         <section className="four">
-          <SayBet />
+          <InterviewScheduler />
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <section className="five">
+          <Todo />
         </section>
         {window.innerWidth < 500 && <div className="test"></div>}
       </div>
