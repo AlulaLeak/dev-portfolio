@@ -20,11 +20,11 @@
 }
 
 /* Chrome 22-28 */
-@media (min-width: 500px) and(-webkit-min-device-pixel-ratio:0) {
+/* @media (min-width: 500px) and(-webkit-min-device-pixel-ratio:0) {
   .selector {
     -chrome-: only(.parent {scroll-snap-type: x proximity;});
   }
-}
+} */
 .parent {
   height: 100vh;
   overflow: scroll;
