@@ -37,3 +37,8 @@ a.font-fam {
     margin-top: 2px;
   }
 }
+@media (min-width: 576px) {
+  a {
+    font-size: large;
+  }
+}

@@ -107,6 +107,14 @@
       transition-duration: 0.5s;
     }
   }
+  @-moz-document url-prefix() {
+    #push-up {
+      margin-top: -3vh;
+    }
+    #button-wrapper {
+      margin-top: -2vh;
+    }
+  }
 }
 
 @media (max-width: 500px) {

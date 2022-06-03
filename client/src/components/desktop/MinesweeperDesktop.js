@@ -137,7 +137,7 @@ export default function MinesweeperDesktop() {
                   recursion would come in handy!!
                 </p>
               </LightSpeed>
-              <div>
+              <div id="push-up">
                 <button
                   onClick={() =>
                     window.open(
