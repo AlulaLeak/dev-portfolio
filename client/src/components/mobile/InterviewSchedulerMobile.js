@@ -27,7 +27,7 @@ export default function InterviewSchedulerMobile() {
             Interview Scheduler
           </h1>
           <h4 onClick={() => toggle(!imgAndSummary)}>
-            (Scheduling App)
+            (Click on the image to read more)
           </h4>
         </div>
       </a.div>

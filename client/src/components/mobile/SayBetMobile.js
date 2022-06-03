@@ -25,7 +25,7 @@ export default function SayBetMobile() {
         <div className="title" ref={ref1}>
           <h1 onClick={() => toggle(!imgAndSummary)}>SayBet</h1>
           <h4 onClick={() => toggle(!imgAndSummary)}>
-            (Sports-Betting App)
+            (Click on the image to read more)
           </h4>
         </div>
       </a.div>
@@ -88,10 +88,10 @@ export default function SayBetMobile() {
               <p onClick={() => toggle(!imgAndSummary)}>
                 Encapsulating the business logic behind
                 sports-betting made this my most proud coding
-                accomplishment thus far! Me and my (amazing)
-                group got a chance to present it on recorded
-                video before ending our monthly odds api
-                subscription. Made in two weeks.
+                accomplishment thus far! My (amazing) group and I
+                got a chance to present it on recorded video
+                before ending our monthly odds api subscription.
+                Made in two weeks.
               </p>
             </LightSpeed>
             <div id="button-wrapper" className="github-link">

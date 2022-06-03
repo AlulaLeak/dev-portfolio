@@ -27,7 +27,7 @@ export default function MinesweeperMobile() {
             Minesweeper
           </h1>
           <h4 onClick={() => toggle(!imgAndSummary)}>
-            (Game App)
+            (Click on the image to read more)
           </h4>
         </div>
       </a.div>

@@ -148,9 +148,9 @@ export default function SayBetDesktop() {
                 <p>
                   Encapsulating the business logic behind
                   sports-betting made this my most proud coding
-                  accomplishment thus far! Me and my (amazing)
-                  group got a chance to present it on recorded
-                  video before ending our monthly odds api
+                  accomplishment thus far! My (amazing) group and
+                  I got a chance to present it on recorded video
+                  before ending our monthly odds api
                   subscription. Made in two weeks.
                 </p>
               </LightSpeed>

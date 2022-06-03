@@ -25,7 +25,7 @@ export default function TodoMobile() {
         <div className="title" ref={ref1}>
           <h1 onClick={() => toggle(!imgAndSummary)}>Todai</h1>
           <h4 onClick={() => toggle(!imgAndSummary)}>
-            (Machine Learning Reminder App)
+            (Click on the image to read more)
           </h4>
         </div>
       </a.div>
@@ -47,11 +47,11 @@ export default function TodoMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                As the user submits a new to-do list reminder
-                into the app, the NLP library classifies the
-                reminder into 4 catagories. This app comes
-                pre-trained but can also get smarter with more
-                usage.
+                A machine learning reminder app. As the user
+                submits a new to-do list reminder into the app,
+                the NLP library classifies the reminder into 4
+                catagories. This app comes pre-trained but can
+                also get smarter with more usage.
               </p>
             </LightSpeed>
             <LightSpeed left delay={1400} duration={1000}>
@@ -88,11 +88,10 @@ export default function TodoMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                This app was made with a very small data set as
-                well as a very small number of categories. This
-                was a great introduction to serverless apps as
-                well as using Upstash to be able to use Redis for
-                persistent storage. Made in less than a week.
+                Made with a very small data set as well as a very
+                small number of categories. Great introduction to
+                serverless apps as well as using Redis/Upstash
+                for persistent storage. Made in less than a week.
               </p>
             </LightSpeed>
             <div className="github-link">
