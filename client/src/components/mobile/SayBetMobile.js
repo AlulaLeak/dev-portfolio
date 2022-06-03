@@ -47,11 +47,9 @@ export default function SayBetMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                A sports betting app where users can bet on their
-                favorite sports games. Leagues include the NBA,
-                NHL, NFL and MLB. Types of bets that are
-                available to be made are moneylines (head to
-                head), spreads, and totals.
+                A live sports betting app where users can bet on
+                their favorite NBA, NHL, NFL and MLB games.
+                Moneylines, spreads, and totals available.
               </p>
             </LightSpeed>
             <LightSpeed left delay={1400} duration={1000}>
@@ -88,9 +86,12 @@ export default function SayBetMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae!
+                Encapsulating the business logic behind
+                sports-betting made this my most proud coding
+                accomplishment thus far! Me and my (amazing)
+                group got a chance to present it on recorded
+                video before ending our monthly odds api
+                subscription. Made in two weeks.
               </p>
             </LightSpeed>
             <div id="button-wrapper" className="github-link">

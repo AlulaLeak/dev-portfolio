@@ -25,7 +25,7 @@ export default function TodoMobile() {
         <div className="title" ref={ref1}>
           <h1 onClick={() => toggle(!imgAndSummary)}>Todai</h1>
           <h4 onClick={() => toggle(!imgAndSummary)}>
-            (Todo/Reminder App)
+            (Machine Learning Reminder App)
           </h4>
         </div>
       </a.div>
@@ -47,12 +47,11 @@ export default function TodoMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae consequuntur
-                voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum!
+                As the user submits a new to-do list reminder
+                into the app, the NLP library classifies the
+                reminder into 4 catagories. This app comes
+                pre-trained but can also get smarter with more
+                usage.
               </p>
             </LightSpeed>
             <LightSpeed left delay={1400} duration={1000}>
@@ -63,22 +62,22 @@ export default function TodoMobile() {
             <div className="row-wrapper">
               <LightSpeed right delay={1500} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  Next.js
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1600} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  ClassifyText(JS)
                 </p>
               </LightSpeed>
               <LightSpeed right delay={1700} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  Redis
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1800} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  Upstash
                 </p>
               </LightSpeed>
             </div>
@@ -89,9 +88,11 @@ export default function TodoMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae!
+                This app was made with a very small data set as
+                well as a very small number of categories. This
+                was a great introduction to serverless apps as
+                well as using Upstash to be able to use Redis for
+                persistent storage. Made in less than a week.
               </p>
             </LightSpeed>
             <div className="github-link">

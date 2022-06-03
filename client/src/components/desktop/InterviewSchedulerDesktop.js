@@ -51,10 +51,13 @@ export default function InterviewSchedulerDesktop() {
             >
               <Pulse when={mouseHoverTitle}>
                 <h1
-                  style={{ marginTop: "22vh" }}
+                  style={{
+                    marginTop: "22vh",
+                    fontSize: "3.2vw",
+                  }}
                   onClick={() => toggle(!imgAndSummary)}
                 >
-                  Interview <br /> Scheduler
+                  Interview Scheduler
                 </h1>
               </Pulse>
               <Pulse when={mouseHoverTitle}>
@@ -85,12 +88,11 @@ export default function InterviewSchedulerDesktop() {
                 duration={1500}
               >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Maxime mollitia, molestiae
-                  quas vel sint commodi repudiandae consequuntur
-                  voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga
-                  praesentium optio, eaque rerum!
+                  A user can book, delete and edit interviews
+                  throughout the weekday by picking an available
+                  day and time slot, typing the name of the
+                  interviewee and selecting from a given list of
+                  potential interviewers.
                 </p>
               </LightSpeed>
               <LightSpeed
@@ -108,7 +110,7 @@ export default function InterviewSchedulerDesktop() {
                   when={inView1}
                   duration={750}
                 >
-                  <p>- Lorem</p>
+                  <p>PostgreSQL</p>
                 </LightSpeed>
                 <LightSpeed
                   left
@@ -116,7 +118,7 @@ export default function InterviewSchedulerDesktop() {
                   duration={1000}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>Express</p>
                 </LightSpeed>
                 <LightSpeed
                   right
@@ -124,7 +126,7 @@ export default function InterviewSchedulerDesktop() {
                   duration={750}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>React.js</p>
                 </LightSpeed>
                 <LightSpeed
                   left
@@ -132,7 +134,7 @@ export default function InterviewSchedulerDesktop() {
                   duration={1000}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>Node.js</p>
                 </LightSpeed>
               </div>
               <LightSpeed
@@ -150,9 +152,9 @@ export default function InterviewSchedulerDesktop() {
                 duration={1500}
               >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Maxime mollitia, molestiae
-                  quas vel sint commodi repudiandae!
+                  Took a test-driven development approach and
+                  worked with testing libraries like storybook
+                  and cypress for unit and end-to-end testing.
                 </p>
               </LightSpeed>
               <div id="button-wrapper">

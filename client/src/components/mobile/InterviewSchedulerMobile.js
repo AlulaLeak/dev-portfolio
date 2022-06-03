@@ -49,12 +49,11 @@ export default function InterviewSchedulerMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae consequuntur
-                voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum!
+                A user can book, delete and edit interviews
+                throughout the weekday by picking an available
+                day and time slot, typing the name of the
+                interviewee and selecting from a given list of
+                potential interviewers.
               </p>
             </LightSpeed>
             <LightSpeed left delay={1400} duration={1000}>
@@ -65,22 +64,22 @@ export default function InterviewSchedulerMobile() {
             <div className="row-wrapper">
               <LightSpeed right delay={1500} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  PostgreSQL
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1600} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  Express
                 </p>
               </LightSpeed>
               <LightSpeed right delay={1700} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  React.js
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1800} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  Node.js
                 </p>
               </LightSpeed>
             </div>
@@ -91,9 +90,9 @@ export default function InterviewSchedulerMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae!
+                Took a test-driven development approach and
+                worked with testing libraries like storybook and
+                cypress for unit and end-to-end testing.
               </p>
             </LightSpeed>
             <div id="button-wrapper" className="github-link">

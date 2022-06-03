@@ -82,8 +82,8 @@ export default function SayBetDesktop() {
                 duration={1500}
               >
                 <p>
-                  A sports betting app where users can bet on
-                  their favorite sports games. Leagues include
+                  A live sports betting app where users can bet
+                  on their favorite sports games. Leagues include
                   the NBA, NHL, NFL and MLB. Types of bets that
                   are available to be made are moneylines (head
                   to head), spreads, and totals.
@@ -137,7 +137,7 @@ export default function SayBetDesktop() {
                 delay={1400}
                 duration={1000}
               >
-                <h4>Notes:</h4>
+                <h4 style={{ marginTop: "0vh" }}>Notes:</h4>
               </LightSpeed>
               <LightSpeed
                 when={inView1}
@@ -146,9 +146,12 @@ export default function SayBetDesktop() {
                 duration={1500}
               >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Maxime mollitia, molestiae
-                  quas vel sint commodi repudiandae!
+                  Encapsulating the business logic behind
+                  sports-betting made this my most proud coding
+                  accomplishment thus far! Me and my (amazing)
+                  group got a chance to present it on recorded
+                  video before ending our monthly odds api
+                  subscription. Made in two weeks.
                 </p>
               </LightSpeed>
               <div id="button-wrapper">

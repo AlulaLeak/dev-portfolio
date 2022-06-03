@@ -49,12 +49,9 @@ export default function MinesweeperMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae consequuntur
-                voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum!
+                A simple game of minesweeper. Players can choose
+                between three levels and the mines on the
+                minefield are randomly generated every game.
               </p>
             </LightSpeed>
             <LightSpeed left delay={1400} duration={1000}>
@@ -65,22 +62,12 @@ export default function MinesweeperMobile() {
             <div className="row-wrapper">
               <LightSpeed right delay={1500} duration={750}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  React.js
                 </p>
               </LightSpeed>
               <LightSpeed left delay={1600} duration={1000}>
                 <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
-                </p>
-              </LightSpeed>
-              <LightSpeed right delay={1700} duration={750}>
-                <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
-                </p>
-              </LightSpeed>
-              <LightSpeed left delay={1800} duration={1000}>
-                <p onClick={() => toggle(!imgAndSummary)}>
-                  - Lorem
+                  Node.js
                 </p>
               </LightSpeed>
             </div>
@@ -91,9 +78,12 @@ export default function MinesweeperMobile() {
             </LightSpeed>
             <LightSpeed right delay={1200} duration={1500}>
               <p onClick={() => toggle(!imgAndSummary)}>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas
-                vel sint commodi repudiandae!
+                I (honestly) made this app on a whim, after
+                completing the core logic of the game, in an
+                interview practice question. I was able to create
+                the function that exposes adjacent zeros, using a
+                recursion technique. Who knew recursion would
+                come in handy!!
               </p>
             </LightSpeed>
             <div className="github-link">

@@ -56,7 +56,7 @@ export default function TodoDesktop() {
               </Pulse>
               <Pulse when={mouseHoverTitle}>
                 <h4 onClick={() => toggle(!imgAndSummary)}>
-                  (Todo/Reminder App)
+                  (Machine Learning Reminder App)
                 </h4>
               </Pulse>
             </div>
@@ -82,12 +82,11 @@ export default function TodoDesktop() {
                 duration={1500}
               >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Maxime mollitia, molestiae
-                  quas vel sint commodi repudiandae consequuntur
-                  voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga
-                  praesentium optio, eaque rerum!
+                  As the user submits a new to-do list reminder
+                  into the app, the NLP library classifies the
+                  reminder into 4 catagories. This app comes
+                  pre-trained but can also get smarter with more
+                  usage.
                 </p>
               </LightSpeed>
               <LightSpeed
@@ -105,7 +104,7 @@ export default function TodoDesktop() {
                   when={inView1}
                   duration={750}
                 >
-                  <p>- Lorem</p>
+                  <p>Next.js</p>
                 </LightSpeed>
                 <LightSpeed
                   left
@@ -113,7 +112,7 @@ export default function TodoDesktop() {
                   duration={1000}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>ClassifyText(JS)</p>
                 </LightSpeed>
                 <LightSpeed
                   right
@@ -121,7 +120,7 @@ export default function TodoDesktop() {
                   duration={750}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>Redis</p>
                 </LightSpeed>
                 <LightSpeed
                   left
@@ -129,7 +128,7 @@ export default function TodoDesktop() {
                   duration={1000}
                   when={inView1}
                 >
-                  <p>- Lorem</p>
+                  <p>Upstash</p>
                 </LightSpeed>
               </div>
               <LightSpeed
@@ -138,7 +137,7 @@ export default function TodoDesktop() {
                 delay={1400}
                 duration={1000}
               >
-                <h4>Notes:</h4>
+                <h4 style={{ marginTop: "1vw" }}>Notes:</h4>
               </LightSpeed>
               <LightSpeed
                 when={inView1}
@@ -147,9 +146,12 @@ export default function TodoDesktop() {
                 duration={1500}
               >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Maxime mollitia, molestiae
-                  quas vel sint commodi repudiandae!
+                  This app was made with a very small data set as
+                  well as a very small number of categories. This
+                  was a great introduction to serverless apps as
+                  well as using Upstash to be able to use Redis
+                  for persistent storage. Made in less than a
+                  week.
                 </p>
               </LightSpeed>
               <div>
