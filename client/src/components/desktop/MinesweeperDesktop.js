@@ -56,7 +56,7 @@ export default function MinesweeperDesktop() {
               </Pulse>
               <Pulse when={mouseHoverTitle}>
                 <h4 onClick={() => toggle(!imgAndSummary)}>
-                  (Sports-Betting App)
+                  (Mini-Game App)
                 </h4>
               </Pulse>
             </div>

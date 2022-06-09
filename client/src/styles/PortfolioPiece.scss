@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
+
 @media (min-width: 500px) {
   .title {
     display: flex;
@@ -78,10 +80,11 @@
     margin-left: 2vh;
     color: aliceblue;
     font-size: 4.8vh;
+    font-family: "Cherry Swash";
+    padding-bottom: 1vh;
   }
   .title > h4 {
     margin-top: -2vh;
-    margin-left: 2vh;
     color: rgb(202, 230, 255);
     font-size: 3vh;
   }
@@ -143,6 +146,7 @@
     margin-left: 2vh;
     color: aliceblue;
     font-size: 3vh;
+    font-family: "Cherry Swash";
   }
 
   .github-link {
