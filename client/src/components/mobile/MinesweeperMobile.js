@@ -90,7 +90,7 @@ export default function MinesweeperMobile() {
               <button
                 onClick={() =>
                   window.open(
-                    "https://boisterous-choux-7357e1.netlify.app"
+                    "https://minesweeper-client-five.vercel.app/"
                   )
                 }
               >

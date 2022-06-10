@@ -161,7 +161,7 @@ export default function InterviewSchedulerDesktop() {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://bespoke-mermaid-ffb3a9.netlify.app"
+                      "https://interview-scheduler-blue.vercel.app/"
                     )
                   }
                 >
