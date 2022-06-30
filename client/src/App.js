@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Nav from "./components/Nav";
 import StarrySky from "./components/StaryNight";
 import SayBet from "./components/projects/SayBet";
@@ -11,9 +12,12 @@ const { detect } = require("detect-browser");
 const browser = detect();
 
 function App() {
+  useEffect(() => {
+    window.location.reload();
+  }, []);
+
   function isSafari() {
-    if (navigator.vendor.match(/[Aa]+pple/g).length > 0)
-      return true;
+    if (navigator.vendor.match(/[Aa]+pple/g).length > 0) return true;
     return false;
   }
   return (
