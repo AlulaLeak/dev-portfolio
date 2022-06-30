@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import StarrySky from "./components/StaryNight";
 import SayBet from "./components/projects/SayBet";
@@ -13,7 +13,7 @@ const browser = detect();
 
 function App() {
   useEffect(() => {
-    window.location.reload();
+    // Fix underline star with reload
   }, []);
 
   function isSafari() {
