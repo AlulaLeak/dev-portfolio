@@ -29,6 +29,7 @@ export default class StarrySky extends React.Component {
     });
   };
   shootingStars = () => {
+    anime.remove("#shootingstars .wish");
     anime({
       targets: ["#shootingstars .wish"],
       easing: "linear",

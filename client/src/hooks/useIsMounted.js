@@ -1,10 +1,12 @@
 import { useRef, useEffect } from "react";
 
-const useIsMounted = () => {
+const useIsMounted = (time) => {
   const isMounted = useRef(false);
   useEffect(() => {
     isMounted.current = true;
-    return () => (isMounted.current = false);
+    setTimeout(() => {
+      return () => (isMounted.current = false);
+    }, 2000);
   }, []);
   return isMounted;
 };

@@ -6,20 +6,18 @@ import InterviewScheduler from "./components/projects/InterviewScheduler";
 import AboveFold from "./components/AboveFold";
 import Droid from "./components/Droid";
 import Todo from "./components/projects/Todo";
-import useIsMounted from "./hooks/useIsMounted";
 import "./App.css";
 const { detect } = require("detect-browser");
 const browser = detect();
 
 function App() {
-  const isMounted = useIsMounted();
   function isSafari() {
     if (navigator.vendor.match(/[Aa]+pple/g).length > 0) return true;
     return false;
   }
   return (
     <div id="container">
-      {isMounted && <StarrySky />}
+      <StarrySky />
       <div className="parent">
         <Nav />
         <section className="one">
