@@ -29,7 +29,7 @@ export default function useStars() {
     });
   };
   const shootingStars = () => {
-    anime.remove("#shootingstars .wish");
+    // anime.remove("#shootingstars .wish");
     anime({
       targets: ["#shootingstars .wish"],
       easing: "linear",
@@ -37,7 +37,7 @@ export default function useStars() {
       delay: (el, i) => 100 * i,
       opacity: [
         {
-          duration: 700,
+          duration: 1000,
           value: "1",
         },
       ],
