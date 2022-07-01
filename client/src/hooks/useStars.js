@@ -29,7 +29,6 @@ export default function useStars() {
     });
   };
   const shootingStars = () => {
-    console.log("shootingStars");
     anime.remove("#shootingstars .wish");
     anime({
       targets: ["#shootingstars .wish"],
