@@ -3,13 +3,20 @@ import anime from "animejs/lib/anime.es.js";
 import "../styles/StaryNight.css";
 
 export default class StarrySky extends React.Component {
-  state = {
-    num: 600,
-    vw: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-    vh: Math.max(
-      (document.documentElement.clientHeight, window.innerHeight || 0)
-    ),
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMounted: false,
+      num: 600,
+      vw: Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      ),
+      vh: Math.max(
+        (document.documentElement.clientHeight, window.innerHeight || 0)
+      ),
+    };
+  }
   starryNight = () => {
     anime({
       targets: ["#sky .star"],
@@ -61,9 +68,21 @@ export default class StarrySky extends React.Component {
   getRandomY = () => {
     return Math.floor(Math.random() * Math.floor(this.state.vh)).toString();
   };
+  renderShootingStars = async () => {
+    this.setState({
+      isMounted: true,
+    });
+  };
   componentDidMount() {
-    this.starryNight();
-    this.shootingStars();
+    this.renderShootingStars().then(() => {
+      this.starryNight();
+      this.shootingStars();
+    });
+  }
+  componentWillUnmount() {
+    this.setState({
+      isMounted: false,
+    });
   }
   render() {
     const { num } = this.state;
@@ -83,18 +102,20 @@ export default class StarrySky extends React.Component {
             />
           ))}
         </svg>
-        <div id="shootingstars">
-          {[...Array(60)].map((x, y) => (
-            <div
-              key={y}
-              className="wish"
-              style={{
-                left: `${this.getRandomY()}px`,
-                top: `${this.getRandomX()}px`,
-              }}
-            />
-          ))}
-        </div>
+        {this.state.isMounted === true && (
+          <div id="shootingstars">
+            {[...Array(60)].map((x, y) => (
+              <div
+                key={y}
+                className="wish"
+                style={{
+                  left: `${this.getRandomY()}px`,
+                  top: `${this.getRandomX()}px`,
+                }}
+              />
+            ))}
+          </div>
+        )}
       </div>
     );
   }
