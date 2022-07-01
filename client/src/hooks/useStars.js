@@ -34,7 +34,7 @@ export default function useStars() {
       targets: ["#shootingstars .wish"],
       easing: "linear",
       loop: true,
-      delay: (el, i) => 1000 * i,
+      delay: (el, i) => 100 * i,
       opacity: [
         {
           duration: 700,
