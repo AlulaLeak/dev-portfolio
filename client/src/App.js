@@ -12,15 +12,6 @@ const { detect } = require("detect-browser");
 const browser = detect();
 
 function App() {
-  window.onload = function () {
-    if (!window.location.hash) {
-      window.location = window.location + "#loaded";
-      window.location.reload();
-    }
-  };
-  useEffect(() => {
-    window.onload();
-  }, []);
   function isSafari() {
     if (navigator.vendor.match(/[Aa]+pple/g).length > 0) return true;
     return false;
