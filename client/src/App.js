@@ -7,7 +7,6 @@ import AboveFold from "./components/AboveFold";
 import Droid from "./components/Droid";
 import Todo from "./components/projects/Todo";
 import "./App.css";
-import { useEffect } from "react";
 const { detect } = require("detect-browser");
 const browser = detect();
 
