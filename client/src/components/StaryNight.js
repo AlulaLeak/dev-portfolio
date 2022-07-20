@@ -7,7 +7,7 @@ export default function StarrySky() {
     getRandomX,
     getRandomY,
     randomRadius,
-    shootingStars,
+    // shootingStars,
     starryNight,
     num,
     isMounted,
@@ -15,8 +15,8 @@ export default function StarrySky() {
 
   useEffect(() => {
     starryNight();
-    shootingStars();
-  }, [shootingStars, starryNight]);
+    // shootingStars();
+  }, [starryNight]);
 
   return (
     <div id="App">
