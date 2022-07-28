@@ -28,6 +28,7 @@
 .parent {
   height: 100vh;
   overflow: scroll;
+  overflow-x: hidden;
   z-index: 100;
   background-color: transparent;
   scroll-behavior: smooth;
